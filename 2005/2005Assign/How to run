@@ -1,0 +1,38 @@
+How to run from a shell window:
+
+Open console (terminal, command.exe, whatever)
+
+Navigate to inside the 2005Assign folder
+
+Compile the code: "using the below statement"
+javac *.java
+
+Run the code:"using the below statement"
+java Driver
+
+Don't forget, if you edit the code then recompile it before running.
+
+Example:
+taranpreetsingh@Macpreet ~ % cd desktop
+taranpreetsingh@Macpreet desktop % cd 2005Assign
+taranpreetsingh@Macpreet 2005Assign % javac *.java
+
+taranpreetsingh@Macpreet 2005Assign % java Driver
+
+taranpreetsingh@Macpreet 2005Assign % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

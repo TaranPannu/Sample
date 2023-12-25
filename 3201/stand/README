@@ -1,0 +1,98 @@
+			   "Evoloops.java"
+
+ Evoloop simulator with event-driven birth/death detection mechanisms
+		    (Java application version 0.2)
+	    CA updating algorithm much improved 09/22/2004
+
+			    Hiroki Sayama
+			 Associate Professor
+		  Department of Human Communication
+		 University of Electro-Communications
+			   1-5-1 Chofugaoka
+		      Chofu Tokyo 182-8585 JAPAN
+			sayama@cx.hc.uec.ac.jp
+
+
+		 Copyright (c) 2004 by Hiroki Sayama
+			 All rights reserved
+
+
+This Java application simulates the evoloop CA and analyze their
+evolutionary dynamics in full detail of their genotypic and phenotypic
+identities, results being presented at the ALIFE IX conference, held
+in Boston during September 12-15, 2004. A monitor of 1024x768 or
+higher resolution is recommended. The software was developed and
+tested using Java(TM) 2 SDK Standard Edition Version 1.4.2, which can
+be downloaded from the Sun Microsystems website (http://java.sun.com/).
+You may need to recompile it on your platform to run it correctly.
+Any suggestions or bug reports will be appreciated.
+
+The event-driven detection algorithms used in this application were
+originally developed by Chris Salzberg and Antony Antony at the
+Section Computational Science, University of Amsterdam, the
+Netherlands.
+
+This application is intended for demonstration only, and thus does not
+include features of genealogy tracing that were used to produce the
+results presented in our publications.
+
+
+Note: This application is believed to work correctly, but no liability
+is assumed to me for its use or for any damage resulting from its
+use. You may not use either this application or the results gained by
+using this application for any commercial purposes without
+permission. You may use, distribute or modify this application without
+permission for academic purposes.
+
+
+Below are quick comments on the structure of the software and how to
+use it.
+
+
+1. FILES
+
+This directory contains the following files:
+
+  README	    (this file)
+  Evoloops.java	    Java source code
+  *.class	    pre-compiled java class files
+  *.img		    spatial image (or configuration) files of various ancestral loops
+  rule_evolvable    a set of state-transition rules for the evoloop
+
+
+2. HOW TO USE
+
+To start up the simulator, simply type "java Evoloops" on your
+terminal. You can operate the CA updates using the "Start/Stop",
+"Step", and "Reset" buttons. Every newborn loop is automatically
+detected during CA updating, and its internal sheath structure is
+marked with a color that is associated to its species index.
+
+There are a couple of text fields to change the settings:
+
+- "Interval" specifies the interval of redrawing CA configuration
+  graphics. With longer intervals you will get faster simulation
+  speed. This may be changed during simulatin runs.
+
+- "Space Size" specifies the length of an edge of the square CA space.
+  Boundary conditions are always assumed periodic for now.
+
+- "Ancestor" specifies which image file is used as an ancestor. You
+  can also create your own loop yourself with any text editor. The
+  format of image files is obvious; take a look at some *.img files
+  and you will see.
+
+The text area shown on the right hand side indicates the current
+population composition, with full information about species ID, size,
+gene sequence and number of individuals, of each species.
+
+
+In any case, I believe that the user interface of this application is
+fairly simple so that you can learn how to play with it by yourself.
+So, give it a try!!
+
+
+
+For more information see:
+Evoloop Website:       http://complex.hc.uec.ac.jp/sayama/sdsr/
+Artis Project Website: http://artis.phenome.org/
