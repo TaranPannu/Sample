@@ -1,0 +1,24 @@
+
+Answer2:
+
+FITNESS PROPORTIONATE       LINEAR RANKING(1.2)  LINEAR RANKING(1.8)  WINDOWING
+0.065                         0.018                         0.005         0.049
+0.457                         0.018                         0.007         0.488
+0.326                         0.018                         0.006         0.341
+0.022                         0.017                         0.004           0
+0.130                         0.018                         0.006         0.122
+
+
+
+Answer3
+
+a) s must be strictly greater than 1 to ensure that all fitness values are positive, 
+including the fitness value of the worst string. If s is less than or equal to 1, 
+the fitness value of the worst string would be negative, which is not meaningful in
+ the context of fitness as expected reproductive opportunities.
+
+b) When s=2, the worst string is given a fitness value of 2-2=0, which means that it has no chance of
+ reproduction. This implies that the least fit member (or equally least fit members) of the population
+  will not contribute to the next generation, and their genetic material will be lost.
+
+c)A deterministic approach like always selecting the best 20% of the population to become parents in evolutionary algorithms is generally considered to be a bad idea due to several drawbacks. Firstly, it can lead to premature convergence, where the algorithm may converge to a local optimum instead of finding the global optimum. This occurs because weaker individuals are not given a chance to become parents, which limits exploration of the solution space. Secondly, relying solely on the best individuals can lead to a loss of diversity in the population, which is necessary for the algorithm to adapt and find optimal solutions in changing environments.

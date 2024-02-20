@@ -1,0 +1,8 @@
+Organization settings
+Organization name
+Human-friendly label for your organization, shown in user interfaces
+Personal
+Organization ID
+Identifier for this organization sometimes used in API requests
+org-NDlnSe05m3PWyQHRRYwJVJn9
+  email- taranpreets@mun.ca
